@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/inquriy"
+        tools:context=".Mypage.MypageInquiryActivity">
+
+        <CheckBox
+            android:id="@+id/inquiry_clothes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cafe24ohsquareair"
+            android:paddingLeft="7sp"
+            android:text="옷  "
+            android:textColor="@color/bluegray"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textView32"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+        <CheckBox
+            android:id="@+id/inquiry_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/cafe24ohsquareair"
+            android:paddingLeft="5dp"
+            android:text="캘린더  "
+            android:textColor="@color/bluegray"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/inquriy_style"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/inquriy_style"
+            app:layout_constraintTop_toBottomOf="@+id/inquriy_style" />
+
+        <CheckBox
+            android:id="@+id/inquiry_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/cafe24ohsquareair"
+            android:paddingLeft="5dp"
+            android:text="기타  "
+            android:textColor="@color/bluegray"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/inquiry_home"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/inquiry_home"
+            app:layout_constraintTop_toBottomOf="@+id/inquiry_home" />
+
+        <CheckBox
+            android:id="@+id/inquriy_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/cafe24ohsquareair"
+            android:paddingLeft="5dp"
+            android:text="홈  "
+            android:textColor="@color/bluegray"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/inquiry_calendar"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/inquiry_calendar"
+            app:layout_constraintTop_toBottomOf="@+id/inquiry_calendar" />
+
+        <CheckBox
+            android:id="@+id/inquiry_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/cafe24ohsquareair"
+            android:paddingLeft="5dp"
+            android:text="마이페이지  "
+            android:textColor="@color/bluegray"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/inquiry_my"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/inquiry_my"
+            app:layout_constraintTop_toBottomOf="@+id/inquiry_my" />
+
+        <CheckBox
+            android:id="@+id/inquiry_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/cafe24ohsquareair"
+            android:paddingLeft="5dp"
+            android:text="OOTD "
+            android:textColor="@color/bluegray"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/inquiry_clothes"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/inquiry_clothes"
+            app:layout_constraintTop_toBottomOf="@+id/inquiry_clothes" />
+
+        <EditText
+            android:id="@+id/edt_inquiry_other"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/edit_design"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="기타 문의사항을 입력해 주세요"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/inquiry_other"
+            app:layout_constraintTop_toBottomOf="@+id/inquiry_other" />
+
+        <EditText
+            android:id="@+id/edt_inquiry_content"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/edit_design"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="내 답변"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/textView35"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+        <EditText
+            android:id="@+id/edt_inquiry_email"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/edit_design"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="내 답변"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/textView37"
+            app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="305dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/cafe24ohsquare"
+            android:text="어떤 부분에서 문의 사항이 있으신가요?"
+            android:textColor="@color/bluegray"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="308dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/cafe24ohsquare"
+            android:text="정확한 답변을 위해 상세한 내용 작성 부탁드릴게요"
+            android:textColor="@color/bluegray"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView32"
+            app:layout_constraintStart_toStartOf="@+id/edt_inquiry_other"
+            app:layout_constraintTop_toBottomOf="@+id/edt_inquiry_other" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/cafe24ohsquare"
+            android:text="답변 받기를 원하시는 이메일 주소 부탁드려요"
+            android:textColor="@color/bluegray"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView35"
+            app:layout_constraintStart_toStartOf="@+id/edt_inquiry_content"
+            app:layout_constraintTop_toBottomOf="@+id/edt_inquiry_content" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_inquiry_content" />
+
+        <Button
+            android:id="@+id/btn_inquiry_shot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="70dp"
+            android:backgroundTint="@color/bluegray"
+            android:text="제출"
+            android:textColor="@color/ea"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_inquiry_reset"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_inquiry_reset" />
+
+        <Button
+            android:id="@+id/btn_inquiry_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/bluegray"
+            android:text="초기화"
+            android:textColor="@color/ea"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_inquiry_email" />
+
+        <TextView
+            android:id="@+id/txt_inquiry_result"
+            android:layout_width="222dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="184dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/inquiry_other"
+            app:layout_constraintEnd_toEndOf="@+id/edt_inquiry_other"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/inquiry_other"
+            app:layout_constraintTop_toTopOf="@+id/inquiry_other"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

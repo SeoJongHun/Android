@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "83978384493",
+    "firebase_url": "https://viewcloset-7c705-default-rtdb.firebaseio.com",
+    "project_id": "viewcloset-7c705",
+    "storage_bucket": "viewcloset-7c705.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83978384493:android:c4d0774ba2bb2c08cebb64",
+        "android_client_info": {
+          "package_name": "com.example.filebase_viewcloset"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83978384493-khk1irur3ocile4v913cm4bl6efd9dp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYda2lYt2mwl6Eu8t2sCszeKFE12Yr-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83978384493-khk1irur3ocile4v913cm4bl6efd9dp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/Clothes_id"
+        android:icon="@drawable/clothes"
+        android:title="Clothes" />
+    <item
+        android:id="@+id/Ootd_id"
+        android:icon="@drawable/ootd"
+        android:title="Ootd" />
+    <item
+        android:id="@+id/Home_id"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/Calendar_id"
+        android:icon="@drawable/calendar"
+        android:title="Calendar" />
+    <item
+        android:id="@+id/MyPage_id"
+        android:icon="@drawable/mypage"
+        android:title="My Page" />
+</menu>

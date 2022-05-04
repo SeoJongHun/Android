@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Clothes.ClothesActivity">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="#eaeaea"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toTopOf="@+id/guideline17"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintStart_toStartOf="@+id/guideline18">
+
+            <ImageView
+                android:id="@+id/select_img"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline17"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView28"
+                tools:srcCompat="@tools:sample/avatars" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <TextView
+            android:id="@+id/txt_select_color"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center|right"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+        <TextView
+            android:id="@+id/txt_select_type"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center|right"
+            android:text="TextView"
+
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView26"
+            app:layout_constraintEnd_toEndOf="@+id/txt_select_location"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/txt_select_location"
+            app:layout_constraintTop_toBottomOf="@+id/textView24"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txt_select_location"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center|right"
+            android:text="TextView"
+
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView24"
+            app:layout_constraintEnd_toEndOf="@+id/txt_select_color"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/txt_select_color"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.07" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.91" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/cafe24ohsquare"
+            android:gravity="center"
+            android:text="Color"
+            android:textColor="@color/bluegray"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline18"
+            app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cafe24ohsquare"
+            android:gravity="center"
+            android:text="Location"
+            android:textColor="@color/bluegray"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cafe24ohsquare"
+            android:gravity="center"
+            android:text="Clothes Type"
+            android:textColor="@color/bluegray"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView24"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline18"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cafe24ohsquare"
+            android:gravity="center"
+            android:text="Season"
+            android:textColor="@color/bluegray"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline18"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cafe24ohsquare"
+            android:gravity="center"
+            android:text="옷 정보"
+            android:textColor="@color/bluegray"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline18"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/check_clothes_spring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="봄"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline18"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <CheckBox
+            android:id="@+id/check_clothes_summer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="여름"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/check_clothes_spring"
+            app:layout_constraintStart_toEndOf="@+id/check_clothes_spring"
+            app:layout_constraintTop_toTopOf="@+id/check_clothes_spring" />
+
+        <CheckBox
+            android:id="@+id/check_clothes_winter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="겨울"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/check_clothes_fall"
+            app:layout_constraintStart_toEndOf="@+id/check_clothes_fall"
+            app:layout_constraintTop_toTopOf="@+id/check_clothes_fall" />
+
+        <CheckBox
+            android:id="@+id/check_clothes_fall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="가을"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/check_clothes_summer"
+            app:layout_constraintStart_toEndOf="@+id/check_clothes_summer"
+            app:layout_constraintTop_toTopOf="@+id/check_clothes_summer" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cafe24ohsquare"
+            android:gravity="center"
+            android:text="TPO"
+            android:textColor="@color/bluegray"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline18"
+            app:layout_constraintTop_toBottomOf="@+id/check_clothes_spring" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline18"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <CheckBox
+            android:id="@+id/check_daily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일상"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline18"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <CheckBox
+            android:id="@+id/check_meeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="모임"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/check_daily"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/check_daily"
+            app:layout_constraintTop_toBottomOf="@+id/check_daily" />
+
+        <CheckBox
+            android:id="@+id/check_promise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="약속"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/check_work"
+            app:layout_constraintStart_toEndOf="@+id/check_work"
+            app:layout_constraintTop_toTopOf="@+id/check_work"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/check_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="업무"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/check_meeting"
+            app:layout_constraintStart_toEndOf="@+id/check_meeting"
+            app:layout_constraintTop_toTopOf="@+id/check_meeting"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/check_travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="여행"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/check_daily"
+            app:layout_constraintStart_toEndOf="@+id/check_daily"
+            app:layout_constraintTop_toTopOf="@+id/check_daily" />
+
+        <CheckBox
+            android:id="@+id/check_sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="운동"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/check_travel"
+            app:layout_constraintStart_toEndOf="@+id/check_travel"
+            app:layout_constraintTop_toTopOf="@+id/check_travel" />
+
+        <CheckBox
+            android:id="@+id/check_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="휴식"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/check_sports"
+            app:layout_constraintTop_toTopOf="@+id/check_sports" />
+
+        <CheckBox
+            android:id="@+id/check_others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="기타"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/check_promise"
+            app:layout_constraintStart_toEndOf="@+id/check_promise"
+            app:layout_constraintTop_toTopOf="@+id/check_promise" />
+
+        <Button
+            android:id="@+id/btn_clothes_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/btn_design"
+            android:text="등록"
+            android:textColor="@color/ea"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_clothes_reset"
+            app:layout_constraintStart_toEndOf="@+id/btn_clothes_reset"
+            app:layout_constraintTop_toTopOf="@+id/btn_clothes_reset" />
+
+        <Button
+            android:id="@+id/btn_clothes_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/btn_design"
+            android:text="초기화"
+            android:textColor="@color/ea"
+            app:layout_constraintBottom_toTopOf="@+id/guideline22"
+            app:layout_constraintStart_toStartOf="@+id/guideline18"
+            app:layout_constraintTop_toBottomOf="@+id/check_meeting"
+            app:layout_constraintVertical_bias="0.65" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.98" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

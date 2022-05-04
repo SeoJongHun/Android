@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ea"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/img_my_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/viewcloset_logo" />
+
+    <EditText
+        android:id="@+id/edt_pw"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:paddingLeft="5dp"
+        android:background="@drawable/edt_white_design"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="@+id/edt_id"
+        app:layout_constraintStart_toStartOf="@+id/edt_id"
+        app:layout_constraintTop_toBottomOf="@+id/edt_id" />
+
+    <EditText
+        android:id="@+id/edt_id"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="아이디"
+        android:paddingLeft="5dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/edt_white_design"
+        app:layout_constraintBottom_toTopOf="@+id/edt_pw"
+        app:layout_constraintEnd_toEndOf="@+id/img_my_logo"
+        app:layout_constraintStart_toStartOf="@+id/img_my_logo"
+        app:layout_constraintTop_toBottomOf="@+id/img_my_logo"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+
+        android:background="@drawable/btn_design"
+        android:drawableLeft="@drawable/xml_login_icon"
+        android:paddingLeft="10dp"
+        android:text="로그인"
+        android:textAlignment="center"
+
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btn_join"
+        app:layout_constraintEnd_toEndOf="@+id/edt_pw"
+        app:layout_constraintStart_toStartOf="@+id/edt_pw"
+        app:layout_constraintTop_toBottomOf="@+id/edt_pw" />
+
+    <Button
+        android:id="@+id/btn_join"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/btn_design"
+        android:drawableLeft="@drawable/xml_person_add"
+        android:paddingLeft="17dp"
+        android:text="회원가입"
+
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

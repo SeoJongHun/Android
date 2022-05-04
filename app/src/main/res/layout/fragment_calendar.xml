@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eaeaea"
+        tools:context="Calendar.CalendarFragment" >
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Calendar"
+            android:textColor="@color/bluegray"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_calendar_title"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_design"
+            android:ems="10"
+            android:hint="제목을 입력해주세요"
+            android:padding="16dp"
+            android:inputType="textPersonName"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/calendarView"
+            app:layout_constraintStart_toStartOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <EditText
+            android:id="@+id/edt_calendar_context"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_design"
+            android:ems="10"
+            android:hint="내용을 입력해주세요"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/calendarView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView23"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:text="제목"
+            android:textColor="@color/bluegray"
+            app:layout_constraintStart_toStartOf="@+id/txt_calendar_view"
+            app:layout_constraintTop_toBottomOf="@+id/txt_calendar_view" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:text="내용"
+            android:textColor="@color/bluegray"
+            app:layout_constraintStart_toStartOf="@+id/edt_calendar_title"
+            app:layout_constraintTop_toBottomOf="@+id/edt_calendar_title" />
+
+        <TextView
+            android:id="@+id/txt_calendar_view"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="@color/bluegray"
+            app:layout_constraintEnd_toEndOf="@+id/calendarView"
+            app:layout_constraintStart_toStartOf="@+id/calendarView"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+        <Button
+            android:id="@+id/btn_calendar_reset"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_design"
+            android:text="초기화"
+            android:textColor="@color/ea"
+            app:layout_constraintBottom_toBottomOf="@id/guideline22"
+            app:layout_constraintStart_toStartOf="@+id/edt_calendar_context"
+            app:layout_constraintTop_toBottomOf="@+id/edt_calendar_context" />
+
+        <Button
+            android:id="@+id/btn_calendar_add"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_design"
+            android:text="저장"
+            android:textColor="@color/ea"
+            app:layout_constraintBottom_toBottomOf="@id/guideline22"
+            app:layout_constraintEnd_toEndOf="@+id/edt_calendar_context"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/btn_calendar_reset"
+            app:layout_constraintTop_toBottomOf="@+id/edt_calendar_context" />
+
+        <TextView
+            android:id="@+id/txt_calendar_context"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/edt_calendar_context"
+            android:background="@drawable/edit_design"
+            android:textSize="15sp"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/edt_calendar_context"
+            app:layout_constraintStart_toStartOf="@+id/edt_calendar_context"
+            app:layout_constraintTop_toTopOf="@+id/edt_calendar_context" />
+
+        <Button
+            android:id="@+id/btn_calendar_update"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_design"
+            android:text="수정"
+            android:textColor="@color/ea"
+            app:layout_constraintBottom_toBottomOf="@id/guideline22"
+            app:layout_constraintEnd_toEndOf="@+id/btn_calendar_add"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_calendar_add"
+            app:layout_constraintTop_toTopOf="@+id/btn_calendar_add" />
+
+        <TextView
+            android:id="@+id/txt_calendar_title"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/edt_calendar_title"
+            android:background="@drawable/edit_design"
+            android:padding="16dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/edt_calendar_title"
+            app:layout_constraintStart_toStartOf="@+id/edt_calendar_title"
+            app:layout_constraintTop_toTopOf="@+id/edt_calendar_title" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.98" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
